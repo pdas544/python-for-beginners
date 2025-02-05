@@ -1,8 +1,8 @@
 # Python-For-Beginners 🐍
 ---
 ## Topics Covered
-1) Brief Introduction, Basic Input-Output, Variables
-2) DataTypes
+1) Brief Introduction, Basic Input-Output 
+2) Variables and DataTypes
 3) Operators
 4) Conditional Statements
 5) Looping Statements
