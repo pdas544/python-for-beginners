@@ -5,7 +5,7 @@ Functions are reusable blocks of code that perform a specific task.
  - Promotes reusability
 
 Syntax:
-def function_name(parameters):
+def function_name():
     # function body
     # code to be executed
 
@@ -18,12 +18,13 @@ Two Steps:
 Example:
 #Step-1 Define a function
 
-def greet(name):
-    return f"Hello, {name}!"
+def greet():
+    "Hello, World!"
 
 #Step-2 Calling the function
-message = greet("Alice")
-print(message)  # Output: Hello, Alice!
+greet()
+
+# Output: Hello, World!
 
 Types of Functions:
 1. Built-in functions: print(), len(), type(), etc.
@@ -32,8 +33,8 @@ Types of Functions:
 
 '''
 #Step-1 Define a function
-def greet(name):
-    print(f"Hello, {name}!")
+def greet():
+    print(f"Hello, World!")
 
 #Step-2 Calling the function
-print(greet("Alice"))  # Output: Hello, Alice!
+greet()  # Output: Hello, World!
