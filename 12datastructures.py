@@ -5,7 +5,7 @@ Introduction to Data Structures in Python:
 2. Tuple
 3. Set
 4. Dictionary
-5. String (as a sequence)
+
 
 We can perform various operations on these data structures, such as:
 - Adding elements
