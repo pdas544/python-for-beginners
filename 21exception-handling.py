@@ -27,3 +27,25 @@ except ValueError:
     print("Invalid input! Please enter a valid number.")
 finally:
     print("Execution completed.")
+
+#user-defined exception
+class AgeException(Exception):
+    """Custom exception class."""
+    def __init__(self, message):
+        super().__init__(message)
+        self.message = message
+
+    def checkAge(self, age):
+        if age < 18:
+            raise AgeException("Age must be at least 18.")
+        else:
+            print("Age is valid.")
+
+#use the custom exception
+try:
+    age = int(input("Enter your age: "))
+    custom_error = AgeException("Custom error occurred.")
+    custom_error.checkAge(age)
+except AgeException as e:
+    print(e.message)
+
