@@ -1,5 +1,5 @@
 '''
-Encapsulation example
+Encapsulation and Abstraction
 
 __ represents private attributes
 and methods in Python.
