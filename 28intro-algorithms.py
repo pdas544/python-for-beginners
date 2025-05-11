@@ -17,6 +17,8 @@ def example_function(n):
     print("Hello, World!")  # This takes the same amount of time regardless of n
 
 example_function(10)  # O(1)
+#space complexity
+# O(1) - Constant space complexity
 
 # O(log n) - Logarithmic time complexity
 def display_logarithmic(n):
