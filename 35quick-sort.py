@@ -24,3 +24,29 @@ if __name__ == "__main__":
     print("Original array:", arr)
     sorted_arr = quick_sort(arr)
     print("Sorted array:", sorted_arr)
+
+'''
+Recursive Quick Sort Algorithm
+'''
+def quick_sort_recursive(arr, low, high):
+    if low < high:
+        # Partition the array
+        pi = partition(arr, low, high)
+        # Recursively sort elements before and after partition
+        quick_sort_recursive(arr, low, pi - 1)
+        quick_sort_recursive(arr, pi + 1, high)
+def partition(arr, low, high):
+    pivot = arr[high]  # Choose the last element as pivot
+    i = low - 1  # Pointer for the smaller element
+    for j in range(low, high):
+        if arr[j] < pivot:  # If current element is smaller than or equal to pivot
+            i += 1  # Increment index of smaller element
+            arr[i], arr[j] = arr[j], arr[i]  # Swap
+    arr[i + 1], arr[high] = arr[high], arr[i + 1]  # Swap the pivot element with the element at i + 1
+    return i + 1  # Return the partitioning index
+# Example usage of recursive quick sort
+if __name__ == "__main__":
+    arr = [64, 25, 12, 22, 11, 90, 45, 78, 34, 56, 23]
+    print("Original array:", arr)
+    quick_sort_recursive(arr, 0, len(arr) - 1)
+    print("Sorted array:", arr)
