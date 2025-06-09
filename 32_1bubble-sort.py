@@ -1,13 +1,4 @@
 '''
-Sorting algorithms in Python
-1) Bubble Sort
-2) Selection Sort
-3) Insertion Sort
-4) Merge Sort
-5) Quick Sort
-'''
-
-'''
 Bubble Sort:
  - Repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.
  - The pass through the list is repeated until the list is sorted.
